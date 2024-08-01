@@ -10,7 +10,7 @@ class UserTaskController extends Controller
      */
     public function index()
     {
-        //
+        return UserTask::all();
     }
 
     /**
