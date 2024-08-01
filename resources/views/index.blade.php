@@ -28,6 +28,11 @@
                 <td>{{ $task->deadline }}</td>
             </tr>
             @endforeach
+            <tr>
+                <td colspan="8" class="text-right">
+                    {!! $tasks->links() !!}
+                </td>
+            </tr>
         </tbody>
     </table>
             </div>

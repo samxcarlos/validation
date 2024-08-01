@@ -10,10 +10,10 @@ class UserTaskController extends Controller
      */
     public function index()
     {
-        $data['tasks'] = UserTask::all();
-        return view('index', $data);
-    //     $data['tasks'] = $user = UserTask::paginate(25);
-    //     return view('index', $data);
+        // $data['tasks'] = UserTask::all();
+        // return view('index', $data);
+         $data['tasks'] = $user = UserTask::paginate(5);
+         return view('index', $data);
     }
 
     /**
